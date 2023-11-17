@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FormSF</string>
+    <string name="limpar">Limpar</string>
+    <string name="forms_f"><![CDATA[FormsS&F]]></string>
+    <string name="nome">Nome:</string>
+    <string name="sobrenome">Sobrenome:</string>
+    <string name="email">Email:</string>
+    <string name="endereco">Endereço:</string>
+    <string name="motivo_da_candidatura">Motivo da candidatura:</string>
+    <string name="sua_senha">Sua senha:</string>
+    <string name="salvar">Salvar</string>
+    <string name="finalizar">Finalizar</string>
 </resources>
