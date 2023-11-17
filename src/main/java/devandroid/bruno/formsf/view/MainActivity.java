@@ -9,10 +9,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import devandroid.bruno.formsf.R;
+import devandroid.bruno.formsf.controller.Controller;
 import devandroid.bruno.formsf.model.Classe;
 
 public class MainActivity extends AppCompatActivity {
 
+    Controller controller;
     Classe objeto;
     Classe outroObjeto;
 
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        controller = new Controller();
+        controller.toString();
 
         objeto = new Classe();
         objeto.setPrimeiroNome("");
@@ -90,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 objeto.setClienteSenha(editSenha.getText().toString());
 
                 Toast.makeText(MainActivity.this, "Salvo"+objeto.toString(), Toast.LENGTH_SHORT).show();
+                controller.salvar(objeto);
             }
         });
 
