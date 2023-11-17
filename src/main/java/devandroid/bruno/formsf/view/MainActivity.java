@@ -15,8 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     Classe objeto;
     Classe outroObjeto;
-    String dadosObjeto;
-    String dadosOutroObjeto;
 
     EditText editNome;
     EditText editSobrenome;
